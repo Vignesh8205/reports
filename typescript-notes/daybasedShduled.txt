@@ -1,0 +1,50 @@
+Week 1: TypeScript Foundations (Basics)
+
+| Day | Topic                    | Goal                                                     |
+| --- | ------------------------ | -------------------------------------------------------- |
+| 1   | Setup TypeScript Project | Setup TS, `tsconfig.json`, compile or use `ts-node`      |
+| 2   | Basic Types              | `string`, `number`, `boolean`, `any`, `unknown`, `void`  |
+| 3   | Arrays & Objects         | `string[]`, `{ username: string }`, optional props       |
+| 4   | Type Aliases             | Define reusable types like `type User = { id: number; }` |
+| 5   | Functions                | Typing parameters and return values                      |
+| 6   | Arrow Functions          | Use `const fn = (val: string): void => {}` style         |
+| 7   | Practice Day             | Mini exercise: Write a user creation function with types |
+
+
+Week 2: Intermediate Typing Concepts
+
+| Day | Topic                  | Goal                                                      |                                  |
+| --- | ---------------------- | --------------------------------------------------------- | -------------------------------- |
+| 8   | Interfaces             | Define structure for user, API request/response objects   |                                  |
+| 9   | Classes & Constructors | Object-oriented TS: classes with constructor & properties |                                  |
+| 10  | Access Modifiers       | Use `private`, `public`, `readonly` to protect properties |                                  |
+| 11  | Async/Await            | `Promise<T>`, handle async data fetching safely           |                                  |
+| 12  | Type Assertions        | Use `as Type`, casting, and when to avoid it              |                                  |
+| 13  | Union & Literal Types  | \`type Role = "admin"                                     | "guest"\`, multiple option types |
+| 14  | Practice Day           | Create a class to hold and validate user data             |                                  |
+
+
+
+Week 3: Real-World Use Cases (with Utility Functions)
+
+| Day | Topic                           | Goal                                                          |
+| --- | ------------------------------- | ------------------------------------------------------------- |
+| 15  | Enums                           | `enum Status { ACTIVE, INACTIVE }` usage in business logic    |
+| 16  | Import/Export Modules           | Reuse types, functions across files using `export/import`     |
+| 17  | Type Inference & Best Practices | Let TS infer types, avoid `any`, clean coding tips            |
+| 18  | Utility Functions               | Create typed helpers like `getTestUser()`, `calculateTotal()` |
+| 19  | Optional & Default Params       | Define reusable functions with optional/default parameters    |
+| 20  | File Handling (JSON/CSV)        | Read/write JSON or CSV using `fs` in Node + types             |
+| 21  | Practice Day                    | Build helper functions to process a user JSON file            |
+
+Week 4: API + Excel Integration
+
+| Day | Topic                 | Goal                                                               |
+| --- | --------------------- | ------------------------------------------------------------------ |
+| 22  | Fetch API (Native)    | Use `fetch` with `async/await`, define typed API request/responses |
+| 23  | Axios with TypeScript | Install axios, create typed API services, error handling           |
+| 24  | Excel Reading (xlsx)  | Use `xlsx` package to read `.xlsx` file, type rows and columns     |
+
+
+
+

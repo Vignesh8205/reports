@@ -1,0 +1,404 @@
+JavaScript Arrays  and Objects
+
+
+
+What is an Array?
+
+&nbsp;A collection of elements stored in a single variable.
+
+example 
+
+const Automation = \["js", "playwright", "cypress"];
+
+
+
+&nbsp;Accessing Elements
+
+&nbsp; console.log(Automation\[0]); // "js"
+
+
+
+&nbsp;Array Properties
+
+&nbsp;length
+
+
+
+console.log(Automation.length); // 3
+
+
+
+2.JavaScript Objects
+
+&nbsp;What is an Object?
+
+&nbsp;A key-value pair collection.
+
+
+
+const Student = {
+
+&nbsp; name: "vignesh",
+
+&nbsp; age: 22
+
+};
+
+
+
+&nbsp;Accessing Object Data
+
+console.log(Student.name);      // Dot notation
+
+console.log(Student\["age"]);    // Bracket notation
+
+
+
+Modifying an Object
+
+Student.city = "Chennai";       // Add
+
+Student.age = 35;               // Update
+
+delete Student.age;             // Delete
+
+
+
+Nested Object
+
+
+
+const emp = {
+
+&nbsp; name: "Alice",
+
+&nbsp; address: {
+
+&nbsp;   city: "Delhi",
+
+&nbsp;   zip: 110001
+
+&nbsp; }
+
+};
+
+console.log(emp.address.city);
+
+
+
+Array of Objects
+
+
+
+const students = \[
+
+&nbsp; { name: "Asha", mark: 75 },
+
+&nbsp; { name: "Ravi", mark: 45 }
+
+];
+
+console.log(students\[1].name); // "Ravi"
+
+
+
+
+
+
+
+Arrays in TypeScript
+
+
+
+Typed Arrays
+
+const nums: number\[] = \[1, 2, 3];
+
+const names: string\[] = \["Ram", "Sam"];
+
+
+
+Typed Array of Objects
+
+
+
+example:
+
+&nbsp;type Student = {
+
+&nbsp; name: string;
+
+&nbsp; mark: number;
+
+};
+
+
+
+const students: Student\[] = \[
+
+&nbsp; { name: "Kiran", mark: 80 },
+
+&nbsp; { name: "Rekha", mark: 60 }
+
+];
+
+
+
+
+
+
+
+
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*17-07-2024 \*\*\*\*\*\*\*\*\*start\*\*\*\*\*\*\*\*\*\*\*
+
+
+
+
+
+**Objects in TypeScript**
+
+
+
+**Type Alias for Object**
+
+type Employee = {
+
+&nbsp; id: number;
+
+&nbsp; name: string;
+
+&nbsp; role?: string; // optional
+
+};
+
+
+
+const emp: Employee = {
+
+&nbsp; id: 101,
+
+&nbsp; name: "Raja"
+
+};
+
+
+
+
+
+ **Nested Types**
+
+type Address = {
+
+&nbsp; city: string;
+
+&nbsp; zip: number;
+
+};
+
+
+
+type User = {
+
+&nbsp; name: string;
+
+&nbsp; address: Address;
+
+};
+
+
+
+const user: User = {
+
+&nbsp; name: "Sara",
+
+&nbsp; address: {
+
+&nbsp;   city: "Mumbai",
+
+&nbsp;   zip: 400001
+
+&nbsp; }
+
+};
+
+
+
+
+
+
+
+
+
+**Destructuring**
+
+
+
+
+
+**Array Destructuring**
+
+
+
+**js** 
+
+const numbers = \[10, 20, 30];
+
+const \[a, b, c] = numbers;
+
+
+
+console.log(a); // 10
+
+console.log(b); // 20
+
+console.log(c); // 30
+
+
+
+
+
+**ts** 
+
+const numbers: number\[] = \[10, 20, 30];
+
+const \[a, b, c] = numbers;
+
+
+
+console.log(a); // 10
+
+console.log(b); // 20
+
+console.log(c); // 30
+
+
+
+
+
+
+
+**Object Destructuring**
+
+
+
+**js** 
+
+const person = {
+
+&nbsp; name: "Vignesh",
+
+&nbsp; age: 25
+
+};
+
+
+
+const { name, age } = person;
+
+
+
+console.log(name); // Vignesh
+
+console.log(age);  // 25
+
+
+
+**ts**
+
+
+
+type Person = {
+
+&nbsp; name: string;
+
+&nbsp; age: number;
+
+};
+
+
+
+const person: Person = {
+
+&nbsp; name: "Vignesh",
+
+&nbsp; age: 25
+
+};
+
+
+
+const { name, age } = person;
+
+
+
+console.log(name); // Vignesh
+
+console.log(age);  // 25
+
+
+
+
+
+
+
+
+
+
+
+**Renaming during Destructuring**
+
+
+
+**javascript**
+
+const user = { username: "admin", role: "superuser" };
+
+const { username: uname } = user;
+
+
+
+console.log(uname); // "admin"
+
+
+
+**typescript**
+
+type User = {
+
+&nbsp; username: string;
+
+&nbsp; role: string;
+
+};
+
+
+
+const user: User = { username: "admin", role: "superuser" };
+
+const { username: uname } = user;
+
+
+
+console.log(uname); // "admin"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

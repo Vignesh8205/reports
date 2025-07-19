@@ -1,0 +1,41 @@
+Variables & Data Types (In-Depth)
+ Variables Recap
+Declaration keywords: var, let, const
+
+var a = 10; // function-scoped
+let b = 20; // block-scoped
+const c = 30; // block-scoped & constant
+
+
+Primitive Data Types
+| Type        | Example         | Description     |
+| ----------- | --------------- | --------------- |
+| `String`    | `"Hello"`       | Text            |
+| `Number`    | `123`, `3.14`   | Integer & float |
+| `Boolean`   | `true`, `false` | Logical         |
+| `Null`      | `null`          | Empty value     |
+| `Undefined` | `undefined`     | Not assigned    |
+
+
+example:
+let name = "Vignesh";      // String
+let age = 25;              // Number
+let isStudent = true;      // Boolean
+let salary = null;         // Null
+let address;               // Undefined
+
+
+Reference (Non-Primitive) Data Types
+
+| Type       | Example          |
+| ---------- | ---------------- |
+| `Object`   | `{ name: "A" }`  |
+| `Array`    | `[1, 2, 3]`      |
+| `Function` | `function () {}` |
+
+example : 
+let person = { name: "Vignesh", age: 25 };
+let colors = ["red", "green", "blue"];
+
+
+

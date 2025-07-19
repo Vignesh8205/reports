@@ -1,0 +1,28 @@
+What is TypeScript?
+
+Superset of JavaScript
+
+Adds static typing
+
+Helps catch errors at compile time
+
+
+
+Prerequisites
+
+Node.js (v16 or above)
+VS Code {code editor or code IDE }
+
+
+Setting Up TypeScript
+npm init -y
+npm install typescript ts-node @types/node --save-dev
+npx tsc --init
+
+Option 1: Compile + Run
+npx tsc
+node dist/index.js
+
+Option 2: Directly run with ts-node
+npx ts-node src/index.ts
+

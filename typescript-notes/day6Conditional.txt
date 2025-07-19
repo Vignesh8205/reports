@@ -1,0 +1,78 @@
+
+
+1) if Statement
+Used to execute a block of code only if a condition is true.
+
+
+Example :
+
+const isLoggedIn: boolean = true;
+
+if (isLoggedIn) {
+  console.log("Show: Logout Button");
+} else {
+  console.log("Show: Login Button");
+}
+
+
+
+
+
+
+2). if...else Statement
+Used to execute one block if true, another if false.
+
+
+
+3)if...else if...else
+  Used to test multiple conditions in sequence.
+
+
+const cartTotal = 1200;
+
+if (cartTotal >= 1000) {
+  console.log("You get 10% discount!");
+} else if (cartTotal >= 500) {
+  console.log("You get 5% discount!");
+} else {
+  console.log("No discount available.");
+}
+
+
+
+
+4) switch Statement
+
+Best when you need to compare one value against many options.const bookingStatus = "Confirmed"; // or "Pending" / "Cancelled"
+
+switch (bookingStatus) {
+  case "Confirmed":
+    console.log("Show green badge");
+    break;
+  case "Pending":
+    console.log("Show yellow badge");
+    break;
+  case "Cancelled":
+    console.log("Show red badge");
+    break;
+  default:
+    console.log("Show gray badge");
+}
+
+
+
+
+
+5. Ternary Operator (condition ? true : false)
+  A compact alternative to if...else.
+
+
+const cardNumber = "4111-XXXX-XXXX-1234";
+const cardType = cardNumber.startsWith("4") ? "Visa" : "Other";
+
+console.log(`Show card icon for: ${cardType}`);
+
+
+
+
+

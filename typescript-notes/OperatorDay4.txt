@@ -1,0 +1,49 @@
+What is an Operator?
+Operators are symbols used to perform operations on variables and values.
+
+2. Arithmetic Operators
+
+| Operator | Description         | Example (`let a = 10, b = 3`) | Result         |
+| -------- | ------------------- | ----------------------------- | -------------- |
+| `+`      | Addition            | `a + b`                       | 13             |
+| `-`      | Subtraction         | `a - b`                       | 7              |
+| `*`      | Multiplication      | `a * b`                       | 30             |
+| `/`      | Division            | `a / b`                       | 3.33           |
+| `%`      | Modulus (Remainder) | `a % b`                       | 1              |
+| `**`     | Exponentiation      | `a ** b`                      | 1000           |
+| `++`     | Increment           | `a++`                         | 10 (then a=11) |
+| `--`     | Decrement           | `b--`                         | 3 (then b=2)   |
+
+ 3. Assignment Operators
+| Operator | Example  | Meaning        |
+| -------- | -------- | -------------- |
+| `=`      | `x = 10` | Assign 10 to x |
+| `+=`     | `x += 5` | `x = x + 5`    |
+| `-=`     | `x -= 2` | `x = x - 2`    |
+| `*=`     | `x *= 3` | `x = x * 3`    |
+| `/=`     | `x /= 4` | `x = x / 4`    |
+| `%=`     | `x %= 2` | `x = x % 2`    |
+
+4. Comparison Operators
+
+| Operator | Description             | Example (`x = 5, y = "5"`) | Result  |
+| -------- | ----------------------- | -------------------------- | ------- |
+| `==`     | Equal to (loose)        | `x == y`                   | `true`  |
+| `===`    | Equal value & type      | `x === y`                  | `false` |
+| `!=`     | Not equal (loose)       | `x != y`                   | `false` |
+| `!==`    | Not equal value or type | `x !== y`                  | `true`  |
+| `>`      | Greater than            | `x > 3`                    | `true`  |
+| `<`      | Less than               | `x < 3`                    | `false` |
+| `>=`     | Greater or equal        | `x >= 5`                   | `true`  |
+| `<=`     | Less or equal           | `x <= 4`                   | `false` |
+
+
+5. Logical Operators
+
+| Operator | Description | Example         | Result     |         |   |        |      |
+| -------- | ----------- | --------------- | ---------- | ------- | - | ------ | ---- |
+| `&&`     | Logical AND | `true && false` | false      |         |   |        |      |
+|  `||`    |             | \`              | Logical OR | \`false |   | true\` | true |
+| `!`      | Logical NOT | `!true`         | false      |         |   |        |      |
+
+
